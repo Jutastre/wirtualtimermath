@@ -40,7 +40,7 @@ int main(){
 
     int tries = 0;
     int successes = 0;
-    while (hours < 10){
+    while (hours < 2){
         thousands++;
         if (thousands > 999){
             thousands = 0;
