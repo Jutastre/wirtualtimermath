@@ -9,7 +9,7 @@ all: bruteforce
 bruteforce: bruteforce.o
     $(CC) -o ./bin/bruteforce bruteforce.o
 
-verticalshootergame.o: bruteforce.c
+bruteforce.c: bruteforce.c
     $(CC) $(CFLAGS) bruteforce.c -o bruteforce.o
 
 clean:
