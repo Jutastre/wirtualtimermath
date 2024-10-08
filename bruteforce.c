@@ -46,11 +46,11 @@ int main(){
             thousands = 0;
             seconds++;
         }
-        if (seconds > 60){
+        if (seconds > 59){
             seconds = 0;
             minutes++;
         }
-        if (minutes > 60){
+        if (minutes > 59){
             minutes = 0;
             hours++;
         }
@@ -62,6 +62,7 @@ int main(){
 
         tries++;
         if (!detect_dupe(string)){
+            printf("%s\n", string);
             successes++;
         }
     }
