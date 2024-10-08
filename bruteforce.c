@@ -40,7 +40,7 @@ int main(){
 
     int tries = 0;
     int successes = 0;
-    while (hours < 2){
+    while (hours < 10){
         thousands++;
         if (thousands > 999){
             thousands = 0;
@@ -62,7 +62,7 @@ int main(){
 
         tries++;
         if (!detect_dupe(string)){
-            printf("%s\n", string);
+            // printf("%s\n", string);
             successes++;
         }
     }
